@@ -1,0 +1,21 @@
+
+<html>
+<head>
+    <title>MM App by Rohit</title>
+    <style>
+        body { background-color: lightblue; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Motivational Image</h1>
+        <form method="get">
+            <input type="submit" value="Get Image" name="btn"/>
+        </form>
+        {% if image_url %}
+            <img src="{{ image_url }}" alt="Motivational Image"/>
+        {% endif %}
+    </center>
+</body>
+</html>
